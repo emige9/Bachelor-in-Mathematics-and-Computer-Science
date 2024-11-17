@@ -1,0 +1,8 @@
+Error: Cannot invoke "TIPO.tipo()" because "<local3>" is null
+java.lang.NullPointerException: Cannot invoke "TIPO.tipo()" because "<local3>" is null
+	at SUMA.<init>(SUMA.java:9)
+	at parser$CUP$parser$actions.CUP$parser$do_action_part00000000(parser.java:705)
+	at parser$CUP$parser$actions.CUP$parser$do_action(parser.java:1409)
+	at parser.do_action(parser.java:421)
+	at java_cup.runtime.lr_parser.parse(lr_parser.java:699)
+	at PLXC.main(PLXC.java:25)

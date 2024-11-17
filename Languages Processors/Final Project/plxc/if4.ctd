@@ -1,0 +1,23 @@
+	a_0 = 1;
+	b_0 = 2;
+	c_0 = 3;
+	t0 = a_0 * b_0;
+	t1 = b_0 * c_0;
+	if (t1 < t0) goto L1;
+	goto L0;
+L0:
+	b_0 = c_0;
+	a_0 = b_0;
+	c_0 = b_0;
+	if (a_0 == c_0) goto L2;
+	goto L3;
+L2:
+	t2 = a_0 * b_0;
+	t3 = t2 * c_0;
+	print t3;
+	goto L4;
+L3:
+L4:
+	goto L5;
+L1:
+L5:

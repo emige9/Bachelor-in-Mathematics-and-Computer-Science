@@ -1,0 +1,23 @@
+import java_cup.runtime.*;
+import java.util.regex.Pattern;
+
+terminal String OPEN_TAG, CLOSE_TAG, TEXT;
+
+non terminal empezar;
+non terminal String linea;
+
+precedence left OPEN_TAG;
+
+empezar ::= linea:l {:System.out.print("{"+l+"}");:};
+
+linea ::= OPEN_TAG:o TEXT:t CLOSE_TAG linea:l {:RESULT=o+":"+t+","+l;:}
+	| OPEN_TAG:o TEXT:t CLOSE_TAG {:RESULT=o+":"+t;:}
+	| OPEN_TAG:o linea:l CLOSE_TAG {:
+		if(o.charAt(o.length()-1)=='s'){String patt = o.substring(0,o.length()-1)+":";
+		Pattern pattern = Pattern.compile(patt); String[] ans = pattern.split(l);
+		String res = "["; for (String s : ans) {res = res + s;} res = res + "]";
+		RESULT=o.substring(0,o.length()-1)+":"+res;} 
+		else {RESULT=o+":{"+l+"}";}
+			:}
+	| linea:l1 linea:l2 {:RESULT=l1+","+l2;:}
+	;

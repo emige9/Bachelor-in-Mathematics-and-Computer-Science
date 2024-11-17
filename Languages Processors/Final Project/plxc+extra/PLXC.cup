@@ -1,0 +1,183 @@
+import java_cup.runtime.*;
+import java.util.*;
+
+
+/* TERMINALES */
+terminal String		IF, ELSE, DO, WHILE, PRINT, FOR, LENGTH;		
+terminal String		MAS, MENOS, POR, DIV, ASIG, IGUAL, NOIGUAL, NOT, MENOR, MAYOR, MENORIGUAL, MAYORIGUAL, AND, OR;
+terminal String		AP, CP, ALL, CLL, CC, AC, PUNTO, COMA, PYC;	
+terminal String		TRUE, FALSE, IMPLICA, FORALL;
+terminal String		MENOSUNARIO;
+terminal String		CHAR, CH, STRING, STR, ENTERO,INT, REAL, FLOAT, IDENT, IDENTBOOL, BOOLEAN;
+
+
+/* NO TERMINALES */
+non terminal 		axioma;
+non terminal AST	lista_de_sent, sentencia, expresion, condicion, declaracion;
+non terminal TIPO	tipo;
+non terminal ArrayList<AST>	arrayInicio, arrayFinal;
+
+
+
+/* PRECEDENCIA */
+precedence left COMA;
+precedence right ASIG;
+precedence right IMPLICA;
+precedence left OR;
+precedence left AND;
+precedence left IGUAL, NOIGUAL, MENOR, MENORIGUAL, MAYOR, MAYORIGUAL;
+precedence left MAS, MENOS;
+precedence left POR, DIV;
+precedence left INT, FLOAT;
+precedence left CHAR;
+precedence left STRING;
+precedence right NOT;
+precedence left MENOSUNARIO;
+precedence left CP;
+precedence nonassoc IF;
+precedence nonassoc ELSE;	
+
+
+/* GRAMÁTICA */
+
+axioma			::= lista_de_sent:ls		{:  ls.ctd();  :}
+			  ;
+
+lista_de_sent		::= sentencia:s				{: RESULT = new AST(null,s); :}
+			  | lista_de_sent:ls sentencia:s	{: RESULT = new AST(ls,s);   :}
+			  ;
+
+sentencia		::= expresion:e PYC	{: RESULT = e; :}
+			  | IF AP condicion:c CP sentencia:s	{: IF aux = new IF(c,s); RESULT = new IFELSE(aux, null); :}
+			  | IF AP condicion:c CP sentencia:s1 ELSE sentencia:s2		{: IF aux = new IF(c,s1); 
+			  								   RESULT = new IFELSE(aux,s2);  :}
+			  | WHILE AP condicion:c CP sentencia:s				{: RESULT = new WHILE(c,s);	:}
+			  | DO sentencia:s WHILE AP condicion:c CP PYC			{: RESULT = new DOWHILE(s,c);	:}
+			  | FOR AP expresion:e1 PYC condicion:c PYC expresion:e2 CP sentencia:s		{: AST finW = new AST(s,e2);
+			  										AST wh = new WHILE(c, finW);
+			  										RESULT = new AST(e1, wh); :}
+			  | FOR AP PYC condicion:c PYC expresion:e2 CP sentencia:s	{: AST finW = new AST(s,e2); 
+			  								   AST wh = new WHILE(c, finW);
+			  								   RESULT = new AST(null,wh); :}
+			  | FOR AP expresion:e1 PYC condicion:c PYC CP sentencia:s	{: AST finW = new AST(s,null); 
+			  								   AST wh = new WHILE(c, finW);
+			  								   RESULT = new AST(e1,wh); :}
+			  | FOR AP PYC condicion:c PYC CP sentencia:s	{: AST finW = new AST(s,null); 
+			  						   AST wh = new WHILE(c, finW);
+			  						   RESULT = new AST(null,wh); :}
+			  | IF AP FORALL IDENTBOOL:i COMA condicion:c CP sentencia:s	{: RESULT = new FORALL(i,c,s); :}
+			  | IF AP FORALL IDENTBOOL:i1 COMA FORALL IDENTBOOL:i2 COMA condicion:c CP sentencia:s
+			  					{: RESULT = new FORALL(i1,i2,c,s); :}
+			  | PRINT AP expresion:e CP PYC		{: RESULT = new PRINT(e, null); :}
+			  | PRINT AP arrayFinal:a CP PYC	{: RESULT = new PRINT(null,null,a);	:}
+			  | PRINT AP condicion:c CP PYC		{: RESULT = new PRINTBOOL(null,c); :}
+			  | ALL lista_de_sent:ls  CLL		{: RESULT = ls; :}
+			  | declaracion:d PYC			{: RESULT = d;	:}
+			  ;
+			  
+declaracion		::= tipo:t IDENT:i	{: if(TablaSimbolos.buscar(i)!=null){ Generador.error(); }
+						   TablaSimbolos.insertar(i,t); RESULT = new DEC(null,null,t); :}
+			  | tipo:t IDENT:i AC ENTERO:e CC {: if(TablaSimbolos.buscar(i)!=null){Generador.error();}
+			  				     TablaSimbolos.insertar(i, new TIPO(TIPO.ARRAY,t,Integer.parseInt(e)));
+			  				     RESULT = new DEC(null, null, t); Generador.asignacion("$"+i+"_length",e);:}
+			  | tipo:t IDENT:i ASIG expresion:e	{: if(TablaSimbolos.buscar(i)!=null){Generador.error();}
+			  					TablaSimbolos.insertar(i,t); RESULT = new DEC(null, new ASIG(i,e),t);:}
+			  | tipo:t IDENT:i AC ENTERO:e CC ASIG arrayFinal:a {: if(TablaSimbolos.buscar(i)!=null){Generador.error();}
+			  					TablaSimbolos.insertar(i, new TIPO(TIPO.ARRAY,t,Integer.parseInt(e)));
+			  					RESULT = new DEC(null, new ARRAY(a,i),t); 
+			  					Generador.asignacion("$"+i+"_length",e); :}
+			  | declaracion:d COMA IDENT:i  {: if(TablaSimbolos.buscar(i)!=null){Generador.error();}
+			  				   TablaSimbolos.insertar(i,((EXP)d).getTipo()); 
+			  				   RESULT = new DEC(d, null,((EXP)d).getTipo()); :}
+			  | declaracion:d COMA IDENT:i ASIG expresion:e  {: if(TablaSimbolos.buscar(i)!=null){Generador.error();}
+			  				   		TablaSimbolos.insertar(i,((EXP)d).getTipo()); 
+			  				   		RESULT = new DEC(d, new ASIG(i,e),((EXP)d).getTipo()); :}
+			  ;
+
+expresion		::= expresion:e1 MAS expresion:e2	{: RESULT = new SUMA(e1, e2); :}
+			  | expresion:e1 MENOS expresion:e2	{: RESULT = new RESTA(e1,e2); :}
+			  | expresion:e1 POR expresion:e2	{: RESULT = new MULTI(e1, e2);  :}
+			  | expresion:e1 DIV expresion:e2	{: RESULT = new DIV(e1,e2);   :}
+			  | MENOS expresion:e			{: RESULT = new RESTA(e, null); :}  %prec MENOSUNARIO
+			  | AP expresion:e CP			{: RESULT = e; :}
+			  | AP tipo:t CP expresion:e		{: RESULT = new CASTING(e,t); :}
+			  | IDENT:i		{: if(TablaSimbolos.buscar(i)==null){Generador.error();} 
+			  			   RESULT = new CONST(i, TablaSimbolos.buscar(i));  :}
+			  | IDENT:i ASIG expresion:e		{: if(TablaSimbolos.buscar(i)==null){Generador.error();}
+			  					   RESULT = new ASIG(i,e);  :}
+			  | IDENT:i ASIG arrayFinal:a		{: if(TablaSimbolos.buscar(i)==null){Generador.error();} 
+			  					   RESULT = new ARRAY(a,i); :}
+			  | IDENT:i AC expresion:e CC ASIG expresion:e1	{: if(TablaSimbolos.buscar(i)==null){Generador.error();} 
+			  					   	   RESULT = new ASIG(i,e,e1); :}
+			  | IDENT:i AC expresion:e CC		{: if(TablaSimbolos.buscar(i)==null){Generador.error();} 
+			  					   RESULT = new CONST(i,TablaSimbolos.buscar(i).getSubtipo(),e); :}
+			  | IDENT:i PUNTO LENGTH		{: RESULT = new CONST("$"+i+"_length", new TIPO(TIPO.INT)); :}
+			  | ENTERO:e		{: RESULT = new CONST(e, new TIPO(TIPO.INT));:}
+			  | REAL:e		{: RESULT = new CONST(e, new TIPO(TIPO.FLOAT));:}
+			  | CH:e		{: RESULT = new CONST(e, new TIPO(TIPO.CHAR));:}
+			  | STR:e		{: RESULT = new STRING(e); :}
+			  | IDENTBOOL:i ASIG TRUE 	{: RESULT = new ASIG(i, new CONST("1",new TIPO(TIPO.BOOL))); :}
+			  | IDENTBOOL:i ASIG FALSE	{: RESULT = new ASIG(i, new CONST("0",new TIPO(TIPO.BOOL))); :}
+			  | IDENTBOOL:i ASIG condicion:c	{: RESULT = new ASIGBOOL(i,c); :}
+			  | IDENTBOOL:i ASIG expresion:e	{: if(TablaSimbolos.buscar(i) == null){ Generador.error();}
+			  					   RESULT = new ASIG(i, e); :}
+			  ;
+			  
+			  
+condicion		::= expresion:e1 IGUAL expresion:e2		{: RESULT = new COND(5, e1, e2); :}
+			  | expresion:e1 NOIGUAL expresion:e2		{: RESULT = new COND(6, e1, e2); :}
+			  | expresion:e1 MENOR expresion:e2		{: RESULT = new COND(1, e1, e2); :}
+			  | expresion:e1 MENORIGUAL expresion:e2	{: RESULT = new COND(2, e1, e2); :}
+			  | expresion:e1 MAYOR expresion:e2		{: RESULT = new COND(3, e1, e2); :}
+			  | expresion:e1 MAYORIGUAL expresion:e2	{: RESULT = new COND(4, e1, e2); :}
+			  | NOT condicion:c				{: RESULT = new NOT(9, c); :}
+			  | condicion:c1 AND condicion:c2		{: RESULT = new AND(7, c1, c2); :}
+			  | condicion:c1 OR condicion:c2		{: RESULT = new OR(8, c1, c2); :}
+			  | AP condicion:c CP				{: RESULT = c; :}
+			  | IDENTBOOL:i					{: RESULT = new COND(5, new CONST("1", new TIPO(TIPO.INT)),
+			  						   new CONST(i, new TIPO(TIPO.INT))); :}
+			  | condicion:c1 IMPLICA condicion:c2		{: RESULT = new OR(8, new NOT(9,c1),c2); :}
+			  | FALSE IMPLICA TRUE				{: RESULT = new COND(5, new CONST("1", new TIPO(TIPO.INT)),
+			  						   new CONST("1", new TIPO(TIPO.INT))); :}
+			  ;
+		  
+		
+tipo		::= INT		{: RESULT = new TIPO(TIPO.INT); :}
+		  | FLOAT 	{: RESULT = new TIPO(TIPO.FLOAT); :}
+		  | CHAR	{: RESULT = new TIPO(TIPO.CHAR); :}
+		  | STRING	{: RESULT = new TIPO(TIPO.STRING); :}
+		  | BOOLEAN	{: RESULT = new TIPO(TIPO.BOOL); :}
+		  ;			  
+		
+		  
+arrayInicio	::= ALL expresion:e	{: RESULT = new ArrayList<AST>(); RESULT.add(e); :} 
+		  | arrayInicio:a COMA expresion:e	{: RESULT = new ArrayList<AST>(); RESULT.addAll(a); RESULT.add(e); :}
+		  ;
+		  
+arrayFinal 	::= arrayInicio:a CLL	{: RESULT = new ArrayList<AST>(); RESULT.addAll(a); :}	 
+		  ; 
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  
+			  

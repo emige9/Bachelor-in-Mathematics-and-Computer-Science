@@ -1,0 +1,22 @@
+import java_cup.runtime.*;
+
+/* Terminales */
+terminal String		IDENT;
+terminal String		NUMERO;
+
+/* No terminales */
+non terminal			valores;
+non terminal String		valor;
+
+/* Precedencia */
+precedence nonassoc IDENT, NUMERO;
+
+/* Gramatica */
+
+valores		::= valor:v valores	{: System.out.print(v + " "); :}
+		  | valor:v		{: System.out.print(v + " "); :}
+		  ;
+		
+valor		::= IDENT:i	{: RESULT = i; :}
+		  | NUMERO:n	{: RESULT = n; :}
+		  ;

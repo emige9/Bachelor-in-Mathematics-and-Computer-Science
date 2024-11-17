@@ -1,0 +1,79 @@
+import java_cup.runtime.*;
+import java.util.HashMap;
+
+action code {:
+	String c = new String();
+	
+	HashMap<String,String> tabla = new HashMap<String,String>();
+	
+	public String buscar(String ident){
+		return tabla.get(ident);
+	}
+	
+	public void insertar(String ident, String cadena){
+		tabla.put(ident, cadena);
+	}
+	
+	:}
+
+/* Terminales */
+terminal		MAS, MENOS;
+terminal		IGUAL;
+terminal		AP,CP;
+terminal		PYC;
+terminal 		PUNTO, COMA;
+terminal		PRINT, SUBSTR, SIZE;
+terminal String		ID, CADENA;
+terminal Integer	NUMERO;
+
+/* No terminales */
+non terminal		lista, linea;
+non terminal		definicion;
+non terminal 		funcion;
+non terminal String	argumento;
+non terminal Integer	argnumero;
+
+/* Precedencia */
+precedence left MAS, MENOS;
+precedence left PUNTO, SUBSTR;
+precedence left AP, CP;
+precedence left SIZE;
+
+
+/* Gramatica */
+
+lista		::= lista linea
+		  | linea
+		  ;
+		
+linea		::= funcion PYC		
+		  | definicion PYC
+		  ;
+		
+funcion		::= PRINT AP argumento:c CP	{: System.out.println(c); :}
+		  ;
+		  
+argumento	::= argumento:a MAS argumento:b						{: RESULT = a + b; :}
+		  | argumento:c PUNTO SUBSTR AP argnumero:p COMA argnumero:l CP		{: RESULT = c.substring(p,p+l); :}
+		  | AP argumento:c CP							{: RESULT = c; :}
+		  | ID:i								{: RESULT = tabla.get(i);  :}
+		  | CADENA:c								{: RESULT = c; :}
+		  ;
+		  
+definicion	::= ID:i IGUAL argumento:c		{: tabla.put(i,c); :}
+		  ;
+		
+argnumero	::= argumento:c PUNTO SIZE AP CP	{: RESULT = c.length();  :}
+		  | argnumero:a MAS argnumero:b		{: RESULT = a + b; :}
+		  | argnumero:a MENOS argnumero:b	{: RESULT = a - b; :}
+		  | NUMERO:n				{: RESULT = n; :}
+		  ;
+
+
+
+
+
+
+
+  
+		  

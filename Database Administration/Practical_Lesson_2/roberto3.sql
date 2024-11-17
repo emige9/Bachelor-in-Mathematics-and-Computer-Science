@@ -1,0 +1,1 @@
+select * from usuario1.employee;

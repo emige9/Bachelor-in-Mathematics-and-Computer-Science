@@ -1,0 +1,28 @@
+Esta práctica consiste en resolver una versión ampliada del ejercicio 12 de la relación de ejercicios de la Sala Común (pestaña TADs). Se facilitan plantillas, código y datos de prueba.
+
+Para utilizar el material suministrado:
+Descarga y descomprime el fichero comprimido Bag.src.zip. Obtendrás dos carpetas: src y data
+Crea un proyecto IntelliJ IDEA (supondremos que se llama Practica-4-ED)
+Copia el contenido de la carpeta src en la carpeta Practica-4-ED\src
+Copia la carpeta data en la carpeta Practica-4-ED
+Debes obtener un contenido como el siguiente:
+Practica-4-ED
+├── data                                     salida esperada
+│   ├── cervantes.out
+│   ├── dickens.out
+│   └── iterator.out
+├── Practica-4-ED.iml
+└── src
+    ├── BagClient.java                       cliente para probar implementaciones (excepto iterador)
+    ├── BagIteratorClient.java               cliente para probar iterador (completar mostFrequent)
+    └── dataStructures
+        └── bag
+            ├── Bag.java
+            ├── SortedArrayBag.java         completar
+            └── SortedLinkedBag.java        completar
+
+Para completar la práctica:
+Completa las implementaciones SortedLinkedBag.java y SortedArrayBag.java
+Prueba tus implementaciones con el programa de prueba BagClient.java comparando la salida obtenida con la salida esperada (dickens.out, cervantes.out), disponible en la carpeta Practica-4-ED\data
+Completa el método mostFrequent de BagIteratorClient.java
+Prueba tu implementación comparando la salida obtenida con la salida esperada (iterator.out), disponible en Practica-4-ED\data

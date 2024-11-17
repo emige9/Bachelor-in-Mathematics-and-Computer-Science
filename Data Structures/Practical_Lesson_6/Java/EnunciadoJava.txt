@@ -1,0 +1,17 @@
+Descarga y descomprime Maxiphobic.java.zip. Al descomprimirlo debes obtener:
+
+├── expectedDot                                  salida esperada de MaxiphobicHeapdDemos
+├── dot                                          salida generada de MaxiphobicHeapDemos por tu implementación
+└── src
+    ├── dataStructures
+    │   └── heap
+    │       ├── EmptyHeapException.java
+    │       ├── Heap.java
+    │       ├── MaxiphobicHeapEfficient.java     completar merge eficiente
+    │       └── MaxiphobicHeap.java              completar merge
+    ├── HeapSort.java                            programa de prueba
+    └── MaxiphobicHeapDemos.java                 programa de prueba
+
+Crea un proyecto en IntelliJ IDEA y copia los directorios en el proyecto.
+El programa de prueba HeapSort.java realiza varios test aleatorios sobre montículos maxifóbicos.
+El programa de prueba MaxiphobicHeapDemos.java genera gráficos DOT para las cadenas "amasa" y "murcielago". Los gráficos esperados están el el directorio expectedDot, los gráficos generados por tu implementación se almacenarán en el directorio dot. Puedes comparar los gráficos de ambos directorios. Para visualizar gráficos DOT en IntelliJ IDEA tienes que instalar el plugin DOT Language.

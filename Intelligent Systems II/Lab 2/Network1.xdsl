@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Gripe">
+			<state id="si_gripe" />
+			<state id="no_gripe" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Otitis">
+			<state id="si_otitis" />
+			<state id="no_otitis" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<noisymax id="Fiebre">
+			<state id="si_fiebre" />
+			<state id="no_fiebre" />
+			<parents>Gripe Otitis</parents>
+			<strengths>0 1 0 1</strengths>
+			<parameters>0.8 0.2 0 1 0.6 0.4 0 1 0.01000000000000001 0.99</parameters>
+		</noisymax>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.2.2601.0 ACADEMIC" name="Network1" faultnameformat="nodestate">
+			<node id="Gripe">
+				<name>Gripe</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>325 226 457 314</position>
+			</node>
+			<node id="Otitis">
+				<name>Otitis</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>570 229 687 301</position>
+			</node>
+			<node id="Fiebre">
+				<name>Fiebre</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>469 412 575 494</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

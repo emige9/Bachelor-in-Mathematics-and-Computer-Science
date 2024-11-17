@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network4" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Animal">
+			<state id="wacka" />
+			<state id="wurro" />
+			<state id="hobexa" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="Color_de_piel">
+			<state id="rojo" />
+			<state id="azul" />
+			<parents>Animal</parents>
+			<probabilities>0.2 0.8 1 0 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="N__pataas">
+			<state id="pat_4" />
+			<state id="pat_5" />
+			<state id="pat_6" />
+			<parents>Animal</parents>
+			<probabilities>0.5 0.5 0 0 0.5 0.5 0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="Tipo_de_piel">
+			<state id="escamosa" />
+			<state id="suave" />
+			<parents>Animal</parents>
+			<probabilities>0.5 0.5 0 1 1 0</probabilities>
+		</cpt>
+		<cpt id="Anomal_a">
+			<state id="si_anomalia" />
+			<state id="no_anomalia" />
+			<parents>N__pataas</parents>
+			<probabilities>0.1 0.9 0.5 0.5 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Cojea">
+			<state id="si_cojea" />
+			<state id="no_cojea" />
+			<parents>N__pataas Anomal_a</parents>
+			<probabilities>1 0 0 1 1 0 1 0 1 0 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.2.2601.0 ACADEMIC" name="Network4" faultnameformat="nodestate">
+			<node id="Animal">
+				<name>Animal</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>402 112 511 184</position>
+			</node>
+			<node id="Color_de_piel">
+				<name>Color de piel</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>265 261 363 329</position>
+			</node>
+			<node id="N__pataas">
+				<name>Nº patas</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>490 264 597 330</position>
+			</node>
+			<node id="Tipo_de_piel">
+				<name>Tipo de piel</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>687 265 787 330</position>
+			</node>
+			<node id="Cojea">
+				<name>Cojea</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>494 484 583 554</position>
+			</node>
+			<node id="Anomal_a">
+				<name>Anomalía</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>681 396 764 448</position>
+			</node>
+			<textbox>
+				<caption>AND</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>569 450 591 464</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

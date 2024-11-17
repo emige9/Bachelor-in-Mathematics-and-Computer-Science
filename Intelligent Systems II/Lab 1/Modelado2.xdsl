@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network3" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Familiar_Cel_aco">
+			<state id="si_familiar" />
+			<state id="no_familiar" />
+			<probabilities>0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Cel_aco">
+			<state id="si_celiaco" />
+			<state id="no_celiaco" />
+			<parents>Familiar_Cel_aco</parents>
+			<probabilities>0.8 0.2 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Dieta_Gluten">
+			<state id="si_gluten" />
+			<state id="no_gluten" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Crisis_Cel_aca">
+			<state id="si_crisis" />
+			<state id="no_crisis" />
+			<parents>Dieta_Gluten Cel_aco</parents>
+			<probabilities>0.99 0.01 0.05 0.95 0.7 0.3 0.005 0.995</probabilities>
+		</cpt>
+		<cpt id="Indigest_n">
+			<state id="si_indigestion" />
+			<state id="no_indigestion" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Resfriado">
+			<state id="si_resfriado" />
+			<state id="no_resfriado" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Mocos">
+			<state id="si_mocos" />
+			<state id="no_mocos" />
+			<parents>Resfriado</parents>
+			<probabilities>0.9 0.1 0.3 0.7</probabilities>
+		</cpt>
+		<cpt id="Vomitar">
+			<state id="si_vomitar" />
+			<state id="no_vomitar" />
+			<parents>Indigest_n Mocos Crisis_Cel_aca</parents>
+			<probabilities>0.99 0.01 0.7 0.3 0.8 0.2 0.6 0.4 0.7 0.3 0.5 0.5 0.5 0.5 0.01 0.99</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.2.2601.0 ACADEMIC" name="Network3" faultnameformat="nodestate">
+			<node id="Familiar_Cel_aco">
+				<name>Familiar Celíaco</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>764 98 874 164</position>
+			</node>
+			<node id="Cel_aco">
+				<name>Celíaco</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>675 223 773 278</position>
+			</node>
+			<node id="Dieta_Gluten">
+				<name>Dieta Gluten</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>464 215 565 278</position>
+			</node>
+			<node id="Crisis_Cel_aca">
+				<name>Crisis Celíaca</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>559 351 673 412</position>
+			</node>
+			<node id="Indigest_n">
+				<name>Indigestión</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>380 358 479 412</position>
+			</node>
+			<node id="Resfriado">
+				<name>Resfriado</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>217 227 312 281</position>
+			</node>
+			<node id="Mocos">
+				<name>Mocos</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>229 351 322 401</position>
+			</node>
+			<node id="Vomitar">
+				<name>Vomitar</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>379 524 489 589</position>
+			</node>
+			<textbox>
+				<caption>AND\n</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>609 317 631 331</position>
+			</textbox>
+			<textbox>
+				<caption>OR</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>397 468 412 482</position>
+			</textbox>
+			<textbox>
+				<caption>OR\n</caption>
+				<font color="000000" name="Arial" size="8" />
+				<position>454 477 469 491</position>
+			</textbox>
+		</genie>
+	</extensions>
+</smile>

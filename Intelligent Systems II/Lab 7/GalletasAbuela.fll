@@ -1,0 +1,26 @@
+Engine: GalletasAbuela
+InputVariable: Indice_galletas
+  enabled: true
+  range: 0.000 10.000
+  term: PocoCrudas Discrete 4.000 1.000 6.000 0.500 7.000 0.000
+  term: MedioHechas Trapezoid 3.000 5.000 6.000 8.000
+  term: Doraditas Discrete 5.000 0.000 7.000 1.000
+OutputVariable: Temperatura
+  enabled: true
+  range: 150.000 250.100
+  accumulation: Maximum
+  defuzzifier: SmallestOfMaximum 200
+  default: nan
+  lock-valid: false
+  lock-range: false
+  term: Baja Trapezoid 150.000 160.000 180.000 190.000
+  term: Media Trapezoid 170.000 190.000 210.000 230.000
+  term: Alta Trapezoid 210.000 220.000 240.000 250.000
+RuleBlock: 
+  enabled: true
+  conjunction: Minimum
+  disjunction: Maximum
+  activation: Minimum
+  rule: if Indice_galletas is PocoCrudas then Temperatura is Alta
+  rule: if Indice_galletas is MedioHechas then Temperatura is Media
+  rule: if Indice_galletas is Doraditas then Temperatura is Baja

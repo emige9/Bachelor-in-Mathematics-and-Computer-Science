@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Clase">
+			<state id="Hobexa" />
+			<state id="Wacka" />
+			<state id="Wurro" />
+			<probabilities>0.3389992917551973 0.3296254634837312 0.3313752447610715</probabilities>
+		</cpt>
+		<cpt id="Piel">
+			<state id="Escamosa" />
+			<state id="Peluda" />
+			<parents>Clase</parents>
+			<probabilities>0.9998157021747144 0.0001842978252856616 0.5054965883244883 0.4945034116755118 0.0001885369532428356 0.9998114630467572</probabilities>
+		</cpt>
+		<cpt id="Patas">
+			<state id="Patas4" />
+			<state id="Patas5" />
+			<state id="Patas6" />
+			<parents>Clase</parents>
+			<probabilities>0.3451283941516157 0.3244870377196216 0.3303845681287628 0.5008845084660095 0.4989891331817033 0.0001263583522870862 0.0001256913021618904 0.514831573655103 0.485042735042735</probabilities>
+		</cpt>
+		<cpt id="Cojea">
+			<state id="No" />
+			<state id="Si" />
+			<parents>Patas</parents>
+			<probabilities>0.9112046058458814 0.08879539415411869 0.0001403705783267827 0.9998596294216733 0.8078332569857993 0.1921667430142006</probabilities>
+		</cpt>
+		<cpt id="Color">
+			<state id="Azulado" />
+			<state id="Rojizo" />
+			<parents>Clase</parents>
+			<probabilities>0.5025801695539993 0.4974198304460007 0.7951099317664898 0.2048900682335102 0.0001885369532428356 0.9998114630467572</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.2.2601.0 ACADEMIC" name="planetazyx_training" faultnameformat="nodestate">
+			<node id="Clase">
+				<name>Clase</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>28 84 100 132</position>
+			</node>
+			<node id="Piel">
+				<name>Piel</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>91 13 163 61</position>
+			</node>
+			<node id="Patas">
+				<name>Patas</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>193 36 265 84</position>
+			</node>
+			<node id="Cojea">
+				<name>Cojea</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>193 106 265 154</position>
+			</node>
+			<node id="Color">
+				<name>Color</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>103 153 175 201</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

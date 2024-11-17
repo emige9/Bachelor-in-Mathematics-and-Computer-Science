@@ -1,0 +1,62 @@
+Engine: Control de temperatura
+InputVariable: Temperatura
+  enabled: true
+  range: 0.000 40.000
+  term: MB Discrete 10.000 1.000 15.000 0.000
+  term: B Triangle 10.000 15.000 20.000
+  term: N Triangle 18.000 20.000 22.000
+  term: A Triangle 20.000 25.000 30.000
+  term: MA Ramp 25.000 30.000
+InputVariable: Humedad
+  enabled: true
+  range: 0.000 100.000
+  term: MB Discrete 10.000 1.000 20.000 0.000
+  term: B Triangle 10.000 25.000 40.000
+  term: N Triangle 30.000 40.000 50.000
+  term: A Triangle 40.000 55.000 70.000
+  term: MA Ramp 60.000 70.000
+OutputVariable: Variacion_Temperatura
+  enabled: true
+  range: -15.000 15.000
+  accumulation: DrasticSum
+  defuzzifier: Centroid 200
+  default: nan
+  lock-valid: false
+  lock-range: false
+  term: BG Triangle -15.000 -10.000 -7.500
+  term: BN Triangle -10.000 -5.000 -2.500
+  term: BP Triangle -7.500 -2.500 0.000
+  term: M Triangle -1.000 0.000 1.000
+  term: SP Triangle 0.000 2.500 7.500
+  term: SN Triangle 2.500 5.000 10.000
+  term: SG Triangle 7.500 10.000 15.000
+RuleBlock: 
+  enabled: true
+  conjunction: DrasticProduct
+  disjunction: DrasticSum
+  activation: AlgebraicProduct
+  rule: if Temperatura is MB and Humedad is MB then Variacion_Temperatura is SN
+  rule: if Temperatura is MB and Humedad is B then Variacion_Temperatura is SN
+  rule: if Temperatura is MB and Humedad is N then Variacion_Temperatura is SG
+  rule: if Temperatura is MB and Humedad is A then Variacion_Temperatura is SG
+  rule: if Temperatura is MB and Humedad is MA then Variacion_Temperatura is SG
+  rule: if Temperatura is B and Humedad is MB then Variacion_Temperatura is M
+  rule: if Temperatura is B and Humedad is B then Variacion_Temperatura is M
+  rule: if Temperatura is B and Humedad is N then Variacion_Temperatura is SP
+  rule: if Temperatura is B and Humedad is A then Variacion_Temperatura is SP
+  rule: if Temperatura is B and Humedad is MA then Variacion_Temperatura is SN
+  rule: if Temperatura is N and Humedad is MB then Variacion_Temperatura is M
+  rule: if Temperatura is N and Humedad is B then Variacion_Temperatura is M
+  rule: if Temperatura is N and Humedad is N then Variacion_Temperatura is M
+  rule: if Temperatura is N and Humedad is A then Variacion_Temperatura is M
+  rule: if Temperatura is N and Humedad is MA then Variacion_Temperatura is BP
+  rule: if Temperatura is A and Humedad is MB then Variacion_Temperatura is M
+  rule: if Temperatura is A and Humedad is B then Variacion_Temperatura is M
+  rule: if Temperatura is A and Humedad is N then Variacion_Temperatura is BP
+  rule: if Temperatura is A and Humedad is A then Variacion_Temperatura is BP
+  rule: if Temperatura is A and Humedad is MA then Variacion_Temperatura is BN
+  rule: if Temperatura is MA and Humedad is MB then Variacion_Temperatura is BP
+  rule: if Temperatura is MA and Humedad is B then Variacion_Temperatura is BN
+  rule: if Temperatura is MA and Humedad is N then Variacion_Temperatura is BN
+  rule: if Temperatura is MA and Humedad is A then Variacion_Temperatura is BG
+  rule: if Temperatura is MA and Humedad is MA then Variacion_Temperatura is BG

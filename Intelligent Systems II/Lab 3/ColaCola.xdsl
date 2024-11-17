@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network2" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Covid">
+			<state id="si_cov" />
+			<state id="no_cov" />
+			<probabilities>0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Estornudos">
+			<state id="si_estornudos" />
+			<state id="no_estornudos" />
+			<parents>Covid</parents>
+			<probabilities>0.8 0.2 0.4 0.6</probabilities>
+		</cpt>
+		<cpt id="Node3">
+			<state id="si_dolor" />
+			<state id="no_dolor" />
+			<parents>Covid</parents>
+			<probabilities>0.75 0.25 0.35 0.65</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.2.2601.0 ACADEMIC" name="Network2" faultnameformat="nodestate">
+			<node id="Covid">
+				<name>Covid</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>546 156 651 238</position>
+				<barchart active="true" />
+			</node>
+			<node id="Estornudos">
+				<name>Estornudos</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>399 346 495 424</position>
+				<barchart active="true" />
+			</node>
+			<node id="Node3">
+				<name>Dolor de garganta</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>681 334 791 418</position>
+				<barchart active="true" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network2" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Gastroenteritis">
+			<state id="si_gastro" />
+			<state id="no_gastro" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Alergia">
+			<state id="si_alergia" />
+			<state id="no_alergia" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Migra_as">
+			<state id="si_migra" />
+			<state id="no_migra" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<noisymax id="V_mitos">
+			<state id="si_vomitos" />
+			<state id="no_vomitos" />
+			<parents>Gastroenteritis Alergia Migra_as</parents>
+			<strengths>0 1 0 1 0 1</strengths>
+			<parameters>0.9 0.1 0 1 0.6 0.4 0 1 0.7 0.3 0 1 0.02000000000000002 0.98</parameters>
+		</noisymax>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.2.2601.0 ACADEMIC" name="Network2" faultnameformat="nodestate">
+			<node id="V_mitos">
+				<name>Vómitos</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>395 413 528 497</position>
+			</node>
+			<node id="Gastroenteritis">
+				<name>Gastroenteritis</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>262 250 380 322</position>
+			</node>
+			<node id="Alergia">
+				<name>Alergia</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>421 250 507 318</position>
+			</node>
+			<node id="Migra_as">
+				<name>Migrañas</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>566 238 669 311</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

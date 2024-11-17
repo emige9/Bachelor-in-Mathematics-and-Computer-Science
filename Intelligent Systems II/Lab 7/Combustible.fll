@@ -1,0 +1,40 @@
+Engine: Combustible
+InputVariable: Temperatura
+  enabled: true
+  range: 0.000 110.000
+  term: Baja Discrete 0.000 0.000 30.000 0.200 40.000 0.800 50.000 1.000 60.000 0.700 70.000 0.200 80.000 0.000
+  term: Alta Discrete 50.000 0.000 60.000 0.300 70.000 0.800 80.000 1.000 90.000 1.000 100.000 0.500 110.000 0.000
+InputVariable: SalidaPresion
+  enabled: true
+  range: 0.000 2200.000
+  term: Baja Discrete 0.000 0.000 200.000 0.400 400.000 0.800 600.000 1.000 800.000 1.000 1000.000 0.800 1200.000 0.400 1400.000 0.000
+  term: Elevada Discrete 1000.000 0.000 1200.000 0.200 1400.000 0.400 1600.000 0.800 1800.000 1.000 1900.000 1.000 2000.000 0.500 2200.000 0.000
+OutputVariable: Presion
+  enabled: true
+  range: 0.000 2200.000
+  accumulation: Maximum
+  defuzzifier: SmallestOfMaximum 200
+  default: nan
+  lock-valid: false
+  lock-range: false
+  term: Baja Discrete 0.000 0.000 200.000 0.400 400.000 0.800 600.000 1.000 800.000 1.000 1000.000 0.800 1200.000 0.400 1400.000 0.000
+  term: Elevada Discrete 1000.000 0.000 1200.000 0.200 1400.000 0.400 1600.000 0.800 1800.000 1.000 1900.000 1.000 2000.000 0.500 2200.000 0.000
+OutputVariable: Combustible
+  enabled: true
+  range: 0.000 8.000
+  accumulation: Maximum
+  defuzzifier: SmallestOfMaximum 200
+  default: nan
+  lock-valid: false
+  lock-range: false
+  term: Pequena Discrete 0.000 0.000 1.000 0.600 2.000 1.000 3.000 1.000 4.000 0.400 5.000 0.000
+  term: Grande Discrete 4.000 0.000 5.000 0.500 6.000 1.000 7.000 0.500 8.000 0.000
+RuleBlock: 
+  enabled: true
+  conjunction: Minimum
+  disjunction: Maximum
+  activation: Minimum
+  rule: if Temperatura is Baja then Presion is Baja
+  rule: if SalidaPresion is Baja then Combustible is Grande
+  rule: if Temperatura is Alta then Presion is Elevada
+  rule: if SalidaPresion is Elevada then Combustible is Pequena

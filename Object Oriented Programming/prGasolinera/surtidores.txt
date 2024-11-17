@@ -1,0 +1,12 @@
+1 gasolina95 90.0
+2 gasolina95 123.0
+3 gasolina95 95.0
+2 gasolina95 100.0
+1 gasolina98 80.0
+1 gasolina98 100.0
+2 gasolina98 150.0
+1 dieselPlus 70.0
+2 dieselPlus 34.0
+2 dieselPlus 45.0
+1 diesel 30.0
+2 diesel 50.0

@@ -1,0 +1,17 @@
+Ticket sin promocion: 
+   Ticket: 1 (gasolinera:Teatinos, matricula:1111AAA, litros:50.0, PRECIO = 100.0)
+Ticket con 10% de descuento: 
+   PROMOCION 10.0%: Ticket: 1 (gasolinera:Teatinos, matricula:1111AAA, litros:50.0, PRECIO = 90.0)
+----------------------------------
+[TeatinosPROMO = 
+    Gasolina95: [0.0, 10.0, 63.0, 95.0]
+    Gasolina98: [0.0, 10.0, 63.0, 95.0]
+    Diesel: [0.0, 0.0, 50.0, 0.0]
+    DieselPlus: [0.0, 25.0, 79.0, 0.0]
+    Repostajes: [[Ticket: 4 (gasolinera:TeatinosPROMO, matricula:2222BBB, litros:30.0, PRECIO = 37.5), Ticket: 5 (gasolinera:TeatinosPROMO, matricula:2222BBB, litros:45.0, PRECIO = 58.5)],[Ticket: 1 (gasolinera:TeatinosPROMO, matricula:1111AAA, litros:80.0, PRECIO = 102.4), Ticket: 2 (gasolinera:TeatinosPROMO, matricula:1111AAA, litros:80.0, PRECIO = 102.4), Ticket: 3 (gasolinera:TeatinosPROMO, matricula:1111AAA, litros:80.0, PRECIO = 102.4)]]
+[TeatinosPROMO = 
+    Gasolina95: [0.0, 0.0, 0.0, 95.0]
+    Gasolina98: [0.0, 0.0, 0.0, 95.0]
+    Diesel: [0.0, 0.0, 50.0, 0.0]
+    DieselPlus: [0.0, 0.0, 79.0, 0.0]
+    Repostajes: [[Ticket: 4 (gasolinera:TeatinosPROMO, matricula:2222BBB, litros:30.0, PRECIO = 37.5), Ticket: 5 (gasolinera:TeatinosPROMO, matricula:2222BBB, litros:45.0, PRECIO = 58.5), Ticket: 9 (gasolinera:TeatinosPROMO, matricula:2222BBB, litros:25.0, PRECIO = 32.5)],[Ticket: 1 (gasolinera:TeatinosPROMO, matricula:1111AAA, litros:80.0, PRECIO = 102.4), Ticket: 2 (gasolinera:TeatinosPROMO, matricula:1111AAA, litros:80.0, PRECIO = 102.4), Ticket: 3 (gasolinera:TeatinosPROMO, matricula:1111AAA, litros:80.0, PRECIO = 102.4), PROMOCION 10.0%: Ticket: 6 (gasolinera:TeatinosPROMO, matricula:1111AAA, litros:10.0, PRECIO = 11.520000000000001), PROMOCION 10.0%: Ticket: 7 (gasolinera:TeatinosPROMO, matricula:1111AAA, litros:60.0, PRECIO = 69.12), PROMOCION 10.0%: Ticket: 8 (gasolinera:TeatinosPROMO, matricula:1111AAA, litros:3.0, PRECIO = 3.456)]]

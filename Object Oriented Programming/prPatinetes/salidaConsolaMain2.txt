@@ -1,0 +1,10 @@
+Aliquindoi
+Patinetes: [(Empresa: Aliquindoi; Codigo: 100; Lat: -4.4495993; Lon: 36.7015323; Autonomia: 5.0), (Empresa: Aliquindoi; Codigo: 101; Lat: -4.4204216; Lon: 36.7182771; Autonomia: 2.0), (Empresa: Aliquindoi; Codigo: 102; Lat: -4.4150382; Lon: 36.7306184; Autonomia: 5.0), (Empresa: Aliquindoi; Codigo: 105; Lat: -4.4150382; Lon: 36.7306184; Autonomia: 7.0), (Empresa: Aliquindoi; Codigo: 110; Lat: -4.4356238; Lon: 36.9404817; Autonomia: 4.0)]
+Errores: [ERROR: Faltan datos EN LINEA: Aliquindoi;102;-4.4495993;36.7015323, ERROR: Dato de tipo incorrecto EN LINEA: Aliquindoi;103;-4.4495993;36.7015323;hola, ERROR: Autonomia negativa al crear Patinete EN LINEA: Aliquindoi;104;-4.4495993;36.7015323;-8.5]
+Empleados: {11222333X=[101, 110]}
+
+Aliquindoi
+Patinetes: [(Empresa: Aliquindoi; Codigo: 100; Lat: -4.4495993; Lon: 36.7015323; Autonomia: 5.0), (Empresa: Aliquindoi; Codigo: 101; Lat: -4.4204216; Lon: 36.7182771; Autonomia: 2.0), (Empresa: Aliquindoi; Codigo: 102; Lat: -4.4150382; Lon: 36.7306184; Autonomia: 5.0), (Empresa: Aliquindoi; Codigo: 105; Lat: -4.4150382; Lon: 36.7306184; Autonomia: 7.0), (Empresa: Aliquindoi; Codigo: 110; Lat: -4.4356238; Lon: 36.9404817; Autonomia: 4.0)]
+Errores: [ERROR: Faltan datos EN LINEA: Aliquindoi;102;-4.4495993;36.7015323, ERROR: Dato de tipo incorrecto EN LINEA: Aliquindoi;103;-4.4495993;36.7015323;hola, ERROR: Autonomia negativa al crear Patinete EN LINEA: Aliquindoi;104;-4.4495993;36.7015323;-8.5]
+Empleados: {11222333X=[100, 102]}
+

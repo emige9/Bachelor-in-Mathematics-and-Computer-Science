@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LogicaNiveles.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">NivelesInstituto</a> &gt; <a href="index.source.html" class="el_package">es.uma.informatica.sii.nivelesinstituto.services</a> &gt; <span class="el_source">LogicaNiveles.java</span></div><h1>LogicaNiveles.java</h1><pre class="source lang-java linenums">package es.uma.informatica.sii.nivelesinstituto.services;
+
+import es.uma.informatica.sii.nivelesinstituto.entities.Grupo;
+import es.uma.informatica.sii.nivelesinstituto.entities.Nivel;
+import es.uma.informatica.sii.nivelesinstituto.exceptions.ElementoNoExisteException;
+import es.uma.informatica.sii.nivelesinstituto.exceptions.ElementoYaExistenteException;
+import es.uma.informatica.sii.nivelesinstituto.exceptions.NivelNoVacioException;
+import es.uma.informatica.sii.nivelesinstituto.repositories.GrupoRepo;
+import es.uma.informatica.sii.nivelesinstituto.repositories.NivelRepo;
+import jakarta.transaction.Transactional;
+import org.springframework.stereotype.Service;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
+
+@Service
+@Transactional
+public class LogicaNiveles {
+    private NivelRepo nivelRepo;
+    private GrupoRepo grupoRepo;
+
+<span class="fc" id="L23">    public LogicaNiveles(NivelRepo nivelRepo, GrupoRepo grupoRepo) {</span>
+<span class="fc" id="L24">        this.nivelRepo = nivelRepo;</span>
+<span class="fc" id="L25">        this.grupoRepo = grupoRepo;</span>
+<span class="fc" id="L26">    }</span>
+
+    public List&lt;Nivel&gt; getNiveles() {
+<span class="fc" id="L29">        return nivelRepo.findAll();</span>
+    }
+
+    public Nivel addNivel(Nivel nivel) {
+<span class="fc" id="L33">        nivel.setId(null);</span>
+<span class="fc" id="L34">        nivel.setGrupos(Collections.EMPTY_LIST);</span>
+<span class="fc" id="L35">        nivelRepo.findByNombre(nivel.getNombre()).ifPresent(n -&gt; {</span>
+<span class="fc" id="L36">            throw new ElementoYaExistenteException(&quot;Nivel ya existe&quot;);</span>
+        });
+<span class="fc" id="L38">        return nivelRepo.save(nivel);</span>
+    }
+
+    public Nivel getNivel(Long id) {
+<span class="fc" id="L42">        var nivel = nivelRepo.findById(id);</span>
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        if (nivel.isEmpty()) {</span>
+<span class="fc" id="L44">            throw new ElementoNoExisteException(&quot;Nivel no encontrado&quot;);</span>
+        } else {
+<span class="fc" id="L46">            return nivel.get();</span>
+        }
+    }
+
+    public Nivel updateNivel(Nivel nivel) {
+<span class="fc bfc" id="L51" title="All 2 branches covered.">        if (nivelRepo.existsById(nivel.getId())) {</span>
+<span class="fc" id="L52">            var opNivel = nivelRepo.findByNombre(nivel.getNombre());</span>
+<span class="fc bfc" id="L53" title="All 4 branches covered.">            if (opNivel.isPresent() &amp;&amp; opNivel.get().getId() != nivel.getId()) {</span>
+<span class="fc" id="L54">                throw new ElementoYaExistenteException(&quot;Nivel ya existe&quot;);</span>
+            }
+<span class="fc" id="L56">            opNivel = nivelRepo.findById(nivel.getId());</span>
+<span class="fc" id="L57">            opNivel.ifPresent(n -&gt; {</span>
+<span class="fc" id="L58">                n.setNombre(nivel.getNombre());</span>
+<span class="fc" id="L59">            });</span>
+<span class="fc" id="L60">            return nivelRepo.save(opNivel.get());</span>
+        } else {
+<span class="fc" id="L62">            throw new ElementoNoExisteException(&quot;Nivel no encontrado&quot;);</span>
+        }
+    }
+
+    public void deleteNivel(Long id) {
+<span class="fc" id="L67">        var nivel = nivelRepo.findById(id);</span>
+<span class="fc bfc" id="L68" title="All 2 branches covered.">        if (nivel.isPresent()) {</span>
+<span class="fc bfc" id="L69" title="All 2 branches covered.">            if (!nivel.get().getGrupos().isEmpty()) {</span>
+<span class="fc" id="L70">                throw new NivelNoVacioException(&quot;Nivel no vacío&quot;);</span>
+            }
+<span class="fc" id="L72">            nivelRepo.deleteById(id);</span>
+        } else {
+<span class="fc" id="L74">            throw new ElementoNoExisteException(&quot;Nivel no encontrado&quot;);</span>
+        }
+<span class="fc" id="L76">    }</span>
+
+    public Grupo addGrupo(Long id, Grupo grupo) {
+<span class="fc" id="L79">        var nivel = getNivel(id);</span>
+<span class="fc" id="L80">        nivel.getGrupos().stream()</span>
+<span class="pc bpc" id="L81" title="1 of 4 branches missed.">            .filter(g -&gt; g.getNombre().equals(grupo.getNombre()) &amp;&amp; g.getId() != grupo.getId() )</span>
+<span class="fc" id="L82">            .findAny().ifPresent(g -&gt; {</span>
+<span class="fc" id="L83">                throw new ElementoYaExistenteException(&quot;Grupo ya existe en el nivel&quot;);</span>
+             });
+<span class="fc" id="L85">        grupo.setId(null);</span>
+<span class="fc" id="L86">        grupo.setNivel(nivel);</span>
+<span class="fc" id="L87">        return grupoRepo.save(grupo);</span>
+    }
+
+    public void deleteGrupo(Long id, Long idGrupo) {
+<span class="fc" id="L91">        existenRelacionados(id, idGrupo);</span>
+<span class="fc" id="L92">        grupoRepo.deleteById(idGrupo);</span>
+<span class="fc" id="L93">    }</span>
+
+    public Grupo updateGrupo(Long idNivel, Grupo grupo) {
+<span class="fc" id="L96">        existenRelacionados(idNivel, grupo.getId());</span>
+<span class="fc" id="L97">        var nivel = getNivel(idNivel);</span>
+<span class="fc" id="L98">        nivel.getGrupos().stream()</span>
+<span class="pc bpc" id="L99" title="1 of 4 branches missed.">            .filter(g -&gt; g.getNombre().equals(grupo.getNombre()) &amp;&amp; g.getId() != grupo.getId()).findAny().ifPresent(g -&gt; {</span>
+<span class="fc" id="L100">                throw new ElementoYaExistenteException(&quot;Grupo ya existe en el nivel&quot;);</span>
+            });
+<span class="fc" id="L102">        grupo.setNivel(nivel);</span>
+<span class="fc" id="L103">        return grupoRepo.save(grupo);</span>
+    }
+
+    private void existenRelacionados(Long id, Long idGrupo) {
+<span class="fc" id="L107">        var nivel = getNivel(id);</span>
+<span class="fc" id="L108">        var grupo = getGrupo(idGrupo);</span>
+<span class="fc bfc" id="L109" title="All 2 branches covered.">        if (grupo.getNivel().getId()!= id) {</span>
+<span class="fc" id="L110">            throw new ElementoNoExisteException(&quot;Grupo no encontrado en el nivel&quot;);</span>
+        }
+<span class="fc" id="L112">    }</span>
+
+    private Grupo getGrupo(Long idGrupo) {
+<span class="fc" id="L115">        var grupo = grupoRepo.findById(idGrupo);</span>
+<span class="fc bfc" id="L116" title="All 2 branches covered.">        if (grupo.isEmpty()) {</span>
+<span class="fc" id="L117">            throw new ElementoNoExisteException(&quot;Grupo no encontrado&quot;);</span>
+        }
+<span class="fc" id="L119">        return grupo.get();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

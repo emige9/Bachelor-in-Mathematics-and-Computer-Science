@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesVacios
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.200 s -- in es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesVacios
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesVacios.devuelveNiveles -- Time elapsed: 0.046 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesVacios.modificarNivelInexistente -- Time elapsed: 0.042 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesVacios.eliminarNivelInexistente -- Time elapsed: 0.043 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesVacios.insertaNivel -- Time elapsed: 0.062 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesVacios.errorAlObtenerNivelConcreto -- Time elapsed: 0.046 s

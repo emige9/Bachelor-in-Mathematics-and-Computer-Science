@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="22.241" tests="18" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Usuario\Documents\Practica JUnit\target\test-classes;C:\Users\Usuario\Documents\Practica JUnit\target\classes;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.5\spring-boot-starter-data-jpa-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.5\spring-boot-starter-aop-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;C:\Users\Usuario\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\Usuario\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Usuario\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Usuario\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\Usuario\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\Usuario\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Usuario\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Usuario\.m2\repository\org\springframework\data\spring-data-jpa\3.2.5\spring-data-jpa-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-orm\6.1.6\spring-orm-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;C:\Users\Usuario\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Usuario\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-aspects\6.1.6\spring-aspects-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\Usuario\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;C:\Users\Usuario\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;C:\Users\Usuario\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;C:\Users\Usuario\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Usuario\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\Usuario\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\Usuario\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\Usuario\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\Usuario\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\Usuario\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Usuario\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;C:\Users\Usuario\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Usuario\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Usuario\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Usuario\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="catalina.useNaming" value="false"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Madrid"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\Usuario\AppData\Local\Temp\surefire5369266270165485066\surefirebooter-20240509174817205_3.jar C:\Users\Usuario\AppData\Local\Temp\surefire5369266270165485066 2024-05-09T17-48-16_851-jvmRun1 surefire-20240509174817205_1tmp surefire_0-20240509174817205_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Usuario\Documents\Practica JUnit\target\test-classes;C:\Users\Usuario\Documents\Practica JUnit\target\classes;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.5\spring-boot-starter-data-jpa-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.5\spring-boot-starter-aop-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;C:\Users\Usuario\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\Usuario\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Usuario\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Usuario\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Usuario\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\Usuario\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\Usuario\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\Usuario\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Usuario\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Usuario\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Usuario\.m2\repository\org\springframework\data\spring-data-jpa\3.2.5\spring-data-jpa-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-orm\6.1.6\spring-orm-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;C:\Users\Usuario\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Usuario\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-aspects\6.1.6\spring-aspects-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Usuario\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Usuario\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\Usuario\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\Usuario\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;C:\Users\Usuario\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;C:\Users\Usuario\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;C:\Users\Usuario\.m2\repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;C:\Users\Usuario\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;C:\Users\Usuario\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Usuario\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\Usuario\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\Usuario\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\Usuario\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\Usuario\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\Usuario\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Usuario\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\Usuario\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Usuario\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;C:\Users\Usuario\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Usuario\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Usuario\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Usuario\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;C:\Users\Usuario\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Usuario\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Usuario"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-03-19"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Usuario\Documents\Practica JUnit"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\Usuario\AppData\Local\Temp\surefire5369266270165485066\surefirebooter-20240509174817205_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22+36-2370"/>
+    <property name="user.name" value="Usuario"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Usuario\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Usuario\AppData\Local\Temp\"/>
+    <property name="catalina.home" value="C:\Users\Usuario\AppData\Local\Temp\tomcat.0.11512567218069265445"/>
+    <property name="com.zaxxer.hikari.pool_number" value="18"/>
+    <property name="java.version" value="22"/>
+    <property name="user.dir" value="C:\Users\Usuario\Documents\Practica JUnit"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="15408"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="catalina.base" value="C:\Users\Usuario\AppData\Local\Temp\tomcat.0.17857069602155194323"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\MinGW\bin;C:\cygwin64\bin;C:\cygwin64\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.6.5\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.6.5\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Haskell Platform\8.6.5\mingw\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\AutoFirma\AutoFirma;C:\Program Files\nodejs\;C:\Users\Usuario\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Usuario\AppData\Local\Programs\Python\Python311\;C:\MinGW\bin;C:\cygwin64\bin;C:\cygwin64\bin;C:\Users\Usuario\AppData\Roaming\cabal\bin;C:\Users\Usuario\AppData\Roaming\local\bin;C:\Users\Usuario\AppData\Local\Microsoft\WindowsApps;C:\Users\Usuario\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Usuario\AppData\Local\GitHubDesktop\bin;C:\Users\Usuario\AppData\Roaming\npm;C:\Users\Usuario\Desktop\Universidad\4º CURSO (2023-2024)\Asignaturas\Segundo Cuatrimestre\Sistemas de Información en Internet\Tema 3\apache-maven-3.9.6\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22+36-2370"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[NivelesInstituto] "/>
+  </properties>
+  <testcase name="errorAlAgregarGrupoANivelInexistente" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="1.299">
+    <system-out><![CDATA[17:48:19.086 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests]: NivelesInstitutoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:48:19.374 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplication for test class es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests
+17:48:19.746 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos]: NivelesLlenos does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:48:19.762 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplication for test class es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:20.802+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:20.802+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:22.113+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:22.250+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:23.263+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:23.282+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:23.282+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:23.426+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:23.428+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2556 ms
+2024-05-09T17:48:23.751+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-09T17:48:24.393+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:a3978b75-0e10-471f-91eb-699883df91a5 user=SA
+2024-05-09T17:48:24.408+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-09T17:48:24.548+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:24.751+02:00  INFO 15408 --- [NivelesInstituto] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-05-09T17:48:24.848+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:25.489+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:28.672+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:28.879+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:29.650+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:30.305+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58198 (http) with context path ''
+2024-05-09T17:48:30.316+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 10.446 seconds (process running for 12.96)
+2024-05-09T17:48:31.372+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-1-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:31.372+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:31.373+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-1-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-09T17:48:31.603+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:31.612+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-09T17:48:31.614+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\Usuario\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="errorAlModificarNombreDeGrupoDeNivelInexistente" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.061">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:31.684+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:31.684+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:31.940+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:31.953+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:32.068+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:32.070+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:32.072+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:32.104+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:32.105+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 416 ms
+2024-05-09T17:48:32.156+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-05-09T17:48:32.160+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:c77494d1-9f26-41e8-b02f-9d450cb2666a user=SA
+2024-05-09T17:48:32.161+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-05-09T17:48:32.163+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:32.167+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:32.175+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:32.259+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:32.270+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:32.346+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:32.500+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58201 (http) with context path ''
+2024-05-09T17:48:32.504+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.868 seconds (process running for 15.149)
+2024-05-09T17:48:32.539+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:32.539+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:32.540+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-09T17:48:32.561+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:32.565+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-05-09T17:48:32.566+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="devuelveListaNiveles" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.128">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:32.612+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:32.613+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:32.831+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:32.847+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:32.926+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:32.927+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:32.928+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:32.964+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:32.964+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 348 ms
+2024-05-09T17:48:33.007+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2024-05-09T17:48:33.010+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:2306796f-9233-48ba-9ba0-a305565ffa18 user=SA
+2024-05-09T17:48:33.011+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2024-05-09T17:48:33.012+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:33.016+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:33.021+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:33.105+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:33.114+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:33.181+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:33.303+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58204 (http) with context path ''
+2024-05-09T17:48:33.308+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.732 seconds (process running for 15.952)
+2024-05-09T17:48:33.338+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-3-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:33.339+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:33.339+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-09T17:48:33.430+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:33.434+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2024-05-09T17:48:33.436+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="eliminarNivel" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.437">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:33.468+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:33.468+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:33.635+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:33.645+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:33.729+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:33.730+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:33.730+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:33.759+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:33.760+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 288 ms
+2024-05-09T17:48:33.792+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2024-05-09T17:48:33.796+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:f007c329-ae37-469d-8b24-d8099b0281bf user=SA
+2024-05-09T17:48:33.796+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2024-05-09T17:48:33.797+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:33.801+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:33.809+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:33.885+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:33.893+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:33.937+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:34.031+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58207 (http) with context path ''
+2024-05-09T17:48:34.038+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.596 seconds (process running for 16.682)
+2024-05-09T17:48:34.077+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-4-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:34.078+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:34.078+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-4-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-09T17:48:34.473+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:34.477+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2024-05-09T17:48:34.478+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="errorAlModificarNombreDeGrupoInexistenteDeNivelExistente" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.055">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:34.516+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:34.517+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:34.677+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:34.688+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:34.748+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:34.749+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:34.749+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:34.770+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:34.771+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 251 ms
+2024-05-09T17:48:34.806+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2024-05-09T17:48:34.809+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:da12c792-3d96-4a84-920f-c878d1da639c user=SA
+2024-05-09T17:48:34.810+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2024-05-09T17:48:34.813+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:34.819+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:34.825+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:34.887+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:34.895+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:34.931+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:35.015+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58211 (http) with context path ''
+2024-05-09T17:48:35.018+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.531 seconds (process running for 17.662)
+2024-05-09T17:48:35.048+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-5-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:35.049+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:35.050+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-5-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-09T17:48:35.070+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:35.073+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2024-05-09T17:48:35.074+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="insertaGrupoEnNivel" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.072">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:35.110+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:35.110+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:35.271+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:35.283+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:35.345+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:35.347+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:35.347+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:35.369+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:35.370+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 258 ms
+2024-05-09T17:48:35.407+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2024-05-09T17:48:35.410+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection conn50: url=jdbc:h2:mem:723a0cf5-3612-493d-a0ec-175db7b77c18 user=SA
+2024-05-09T17:48:35.411+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2024-05-09T17:48:35.412+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:35.419+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:35.425+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:35.504+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:35.510+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:35.548+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:35.635+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58214 (http) with context path ''
+2024-05-09T17:48:35.638+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.556 seconds (process running for 18.282)
+2024-05-09T17:48:35.659+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-6-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:35.659+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:35.660+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-6-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-09T17:48:35.705+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:35.707+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2024-05-09T17:48:35.709+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="modificarNivel" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.148">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:35.738+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:35.739+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:35.897+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:35.906+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:35.960+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:35.961+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:35.961+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:35.981+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:35.982+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 241 ms
+2024-05-09T17:48:36.014+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2024-05-09T17:48:36.017+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection conn60: url=jdbc:h2:mem:2352b6c1-2935-40c1-8e57-2cfa0dee5371 user=SA
+2024-05-09T17:48:36.017+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2024-05-09T17:48:36.018+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:36.021+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:36.027+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:36.091+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:36.097+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:36.128+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:36.215+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58217 (http) with context path ''
+2024-05-09T17:48:36.217+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.502 seconds (process running for 18.861)
+2024-05-09T17:48:36.241+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-7-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:36.241+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-7-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:36.241+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-7-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-09T17:48:36.358+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:36.362+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2024-05-09T17:48:36.363+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="errorAlAgregarGrupoConNombreExistenteEnNivel" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.048">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:36.394+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:36.394+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:36.506+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:36.515+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:36.574+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:36.574+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:36.575+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:36.597+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:36.597+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 201 ms
+2024-05-09T17:48:36.626+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2024-05-09T17:48:36.628+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection conn70: url=jdbc:h2:mem:a52f243f-677e-4898-8bd9-f938482c3828 user=SA
+2024-05-09T17:48:36.629+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2024-05-09T17:48:36.631+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:36.634+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:36.638+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:36.689+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:36.699+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:36.742+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:36.833+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58220 (http) with context path ''
+2024-05-09T17:48:36.836+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.466 seconds (process running for 19.48)
+2024-05-09T17:48:36.858+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-8-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:36.858+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:36.859+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-8-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-09T17:48:36.876+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:36.880+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2024-05-09T17:48:36.881+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="insertaNivelExistente" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.043">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:36.911+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:36.911+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:37.055+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:37.067+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:37.126+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:37.127+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:37.129+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:37.154+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:37.154+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 240 ms
+2024-05-09T17:48:37.193+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2024-05-09T17:48:37.198+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection conn80: url=jdbc:h2:mem:0a22d256-c122-4221-b65d-9db7d5e63204 user=SA
+2024-05-09T17:48:37.198+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2024-05-09T17:48:37.201+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:37.204+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:37.209+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:37.270+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:37.280+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:37.316+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:37.406+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58223 (http) with context path ''
+2024-05-09T17:48:37.408+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.519 seconds (process running for 20.052)
+2024-05-09T17:48:37.428+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-9-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:37.428+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-9-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:37.430+02:00  INFO 15408 --- [NivelesInstituto] [o-auto-9-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-05-09T17:48:37.446+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:37.449+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2024-05-09T17:48:37.451+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="errorAlModificarNombreDeGrupoConNombreExistenteEnNivel" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.104">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:37.476+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:37.476+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:37.597+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:37.606+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:37.653+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:37.653+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:37.654+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:37.675+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:37.675+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 198 ms
+2024-05-09T17:48:37.707+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2024-05-09T17:48:37.709+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection conn90: url=jdbc:h2:mem:2d5d0317-795c-40eb-843a-11de40f89690 user=SA
+2024-05-09T17:48:37.710+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2024-05-09T17:48:37.711+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:37.716+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:37.721+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:37.776+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:37.782+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:37.822+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:37.908+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58226 (http) with context path ''
+2024-05-09T17:48:37.910+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.453 seconds (process running for 20.554)
+2024-05-09T17:48:37.939+02:00  INFO 15408 --- [NivelesInstituto] [-auto-10-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:37.940+02:00  INFO 15408 --- [NivelesInstituto] [-auto-10-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:37.940+02:00  INFO 15408 --- [NivelesInstituto] [-auto-10-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-09T17:48:38.016+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:38.018+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2024-05-09T17:48:38.019+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="errorAlEliminarNivelConGrupos" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.081">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:38.045+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:38.045+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:38.192+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:38.201+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:38.256+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:38.257+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:38.257+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:38.280+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:38.280+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 232 ms
+2024-05-09T17:48:38.308+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2024-05-09T17:48:38.310+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection conn100: url=jdbc:h2:mem:0bfb217a-14fd-4e13-8408-c444f6a18b7f user=SA
+2024-05-09T17:48:38.311+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2024-05-09T17:48:38.313+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:38.316+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:38.321+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:38.389+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:38.397+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:38.425+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:38.494+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58229 (http) with context path ''
+2024-05-09T17:48:38.499+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.476 seconds (process running for 21.143)
+2024-05-09T17:48:38.521+02:00  INFO 15408 --- [NivelesInstituto] [-auto-11-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:38.521+02:00  INFO 15408 --- [NivelesInstituto] [-auto-11-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:38.522+02:00  INFO 15408 --- [NivelesInstituto] [-auto-11-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-09T17:48:38.573+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:38.575+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2024-05-09T17:48:38.576+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="errorAlEliminarGrupoDeNivelInexistente" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.045">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:38.606+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:38.606+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:38.728+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:38.738+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:38.787+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:38.788+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:38.788+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:38.809+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:38.809+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 201 ms
+2024-05-09T17:48:38.836+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2024-05-09T17:48:38.839+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection conn110: url=jdbc:h2:mem:98d490a4-f8f5-4ec8-998e-437397f182a2 user=SA
+2024-05-09T17:48:38.839+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2024-05-09T17:48:38.841+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:38.845+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:38.849+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:38.907+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:38.915+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:38.947+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:39.030+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58232 (http) with context path ''
+2024-05-09T17:48:39.033+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.447 seconds (process running for 21.677)
+2024-05-09T17:48:39.056+02:00  INFO 15408 --- [NivelesInstituto] [-auto-12-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:39.056+02:00  INFO 15408 --- [NivelesInstituto] [-auto-12-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:39.057+02:00  INFO 15408 --- [NivelesInstituto] [-auto-12-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-09T17:48:39.071+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:39.072+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2024-05-09T17:48:39.079+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="eliminaGrupoDeNivel" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.084">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:39.104+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:39.104+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:39.204+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:39.213+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:39.274+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:39.275+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:39.275+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:39.296+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:39.297+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 192 ms
+2024-05-09T17:48:39.326+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2024-05-09T17:48:39.329+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection conn119: url=jdbc:h2:mem:3d481c76-f521-4e3e-ae53-374df7e412c1 user=SA
+2024-05-09T17:48:39.329+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2024-05-09T17:48:39.331+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:39.335+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:39.341+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:39.401+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:39.407+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:39.441+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:39.542+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58235 (http) with context path ''
+2024-05-09T17:48:39.544+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.459 seconds (process running for 22.188)
+2024-05-09T17:48:39.571+02:00  INFO 15408 --- [NivelesInstituto] [-auto-13-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:39.571+02:00  INFO 15408 --- [NivelesInstituto] [-auto-13-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:39.571+02:00  INFO 15408 --- [NivelesInstituto] [-auto-13-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-09T17:48:39.626+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:39.628+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2024-05-09T17:48:39.629+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="errorAlEliminarGrupoInexistenteDeNivelExistente" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.055">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:39.656+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:39.657+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:39.764+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:39.770+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:39.817+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:39.818+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:39.818+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:39.838+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:39.838+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 180 ms
+2024-05-09T17:48:39.864+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2024-05-09T17:48:39.866+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection conn129: url=jdbc:h2:mem:1f7ef7d7-586a-4e80-afc8-514da7a0efd2 user=SA
+2024-05-09T17:48:39.866+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2024-05-09T17:48:39.867+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:39.870+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:39.875+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:39.931+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:39.936+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:39.970+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:40.048+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58238 (http) with context path ''
+2024-05-09T17:48:40.050+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.416 seconds (process running for 22.695)
+2024-05-09T17:48:40.070+02:00  INFO 15408 --- [NivelesInstituto] [-auto-14-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:40.070+02:00  INFO 15408 --- [NivelesInstituto] [-auto-14-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:40.071+02:00  INFO 15408 --- [NivelesInstituto] [-auto-14-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-09T17:48:40.088+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:40.090+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2024-05-09T17:48:40.103+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="errorAlEliminarGrupoNoAsociadoANivel" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.08">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:40.135+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:40.135+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:40.235+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:40.243+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:40.286+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:40.287+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:40.287+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:40.305+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:40.305+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 169 ms
+2024-05-09T17:48:40.328+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2024-05-09T17:48:40.336+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection conn138: url=jdbc:h2:mem:b67297de-b1dd-4aac-8b0a-145f46071999 user=SA
+2024-05-09T17:48:40.337+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2024-05-09T17:48:40.338+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:40.340+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:40.345+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:40.393+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:40.400+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:40.427+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:40.503+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58241 (http) with context path ''
+2024-05-09T17:48:40.506+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.392 seconds (process running for 23.15)
+2024-05-09T17:48:40.533+02:00  INFO 15408 --- [NivelesInstituto] [-auto-15-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:40.533+02:00  INFO 15408 --- [NivelesInstituto] [-auto-15-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:40.534+02:00  INFO 15408 --- [NivelesInstituto] [-auto-15-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-09T17:48:40.583+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:40.585+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2024-05-09T17:48:40.587+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="obtenerNivelConcreto" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.064">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:40.621+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:40.622+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:40.742+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:40.749+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:40.786+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:40.787+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:40.787+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:40.804+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:40.805+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 180 ms
+2024-05-09T17:48:40.826+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2024-05-09T17:48:40.828+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-16 - Added connection conn148: url=jdbc:h2:mem:d9972599-d396-4fa1-8256-d2dd963f3212 user=SA
+2024-05-09T17:48:40.828+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2024-05-09T17:48:40.829+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:40.832+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:40.836+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:40.886+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:40.892+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:40.920+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:40.996+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58244 (http) with context path ''
+2024-05-09T17:48:40.998+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.403 seconds (process running for 23.642)
+2024-05-09T17:48:41.020+02:00  INFO 15408 --- [NivelesInstituto] [-auto-16-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:41.021+02:00  INFO 15408 --- [NivelesInstituto] [-auto-16-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:41.021+02:00  INFO 15408 --- [NivelesInstituto] [-auto-16-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-05-09T17:48:41.042+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:41.044+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2024-05-09T17:48:41.060+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="modificaNombreDeGrupo" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.054">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:41.085+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:41.085+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:41.182+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:41.189+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:41.238+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:41.239+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:41.239+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:41.256+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:41.256+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 170 ms
+2024-05-09T17:48:41.276+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Starting...
+2024-05-09T17:48:41.278+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-17 - Added connection conn157: url=jdbc:h2:mem:3c772410-4807-4a2f-b80b-98c5db200722 user=SA
+2024-05-09T17:48:41.278+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Start completed.
+2024-05-09T17:48:41.279+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:41.281+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:41.285+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:41.332+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:41.337+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:41.369+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:41.429+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58247 (http) with context path ''
+2024-05-09T17:48:41.432+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.365 seconds (process running for 24.075)
+2024-05-09T17:48:41.453+02:00  INFO 15408 --- [NivelesInstituto] [-auto-17-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:41.453+02:00  INFO 15408 --- [NivelesInstituto] [-auto-17-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:41.454+02:00  INFO 15408 --- [NivelesInstituto] [-auto-17-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-09T17:48:41.479+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:41.481+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown initiated...
+2024-05-09T17:48:41.485+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-17 - Shutdown completed.
+]]></system-out>
+  </testcase>
+  <testcase name="modificarNivelConNombreExistente" classname="es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos" time="0.055">
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2024-05-09T17:48:41.517+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Starting NivelesInstitutoApplicationTests using Java 22 with PID 15408 (started by Usuario in C:\Users\Usuario\Documents\Practica JUnit)
+2024-05-09T17:48:41.517+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2024-05-09T17:48:41.619+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-09T17:48:41.628+02:00  INFO 15408 --- [NivelesInstituto] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 2 JPA repository interfaces.
+2024-05-09T17:48:41.671+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2024-05-09T17:48:41.672+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-09T17:48:41.673+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2024-05-09T17:48:41.693+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-09T17:48:41.694+02:00  INFO 15408 --- [NivelesInstituto] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 175 ms
+2024-05-09T17:48:41.713+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Starting...
+2024-05-09T17:48:41.716+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-18 - Added connection conn164: url=jdbc:h2:mem:941cbf6c-e17d-4939-ad1f-09dc0dda2fb2 user=SA
+2024-05-09T17:48:41.716+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Start completed.
+2024-05-09T17:48:41.717+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-09T17:48:41.720+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-09T17:48:41.724+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-09T17:48:41.786+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-09T17:48:41.794+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:41.829+02:00  WARN 15408 --- [NivelesInstituto] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-09T17:48:41.921+02:00  INFO 15408 --- [NivelesInstituto] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 58250 (http) with context path ''
+2024-05-09T17:48:41.923+02:00  INFO 15408 --- [NivelesInstituto] [           main] u.i.s.n.NivelesInstitutoApplicationTests : Started NivelesInstitutoApplicationTests in 0.431 seconds (process running for 24.567)
+2024-05-09T17:48:41.949+02:00  INFO 15408 --- [NivelesInstituto] [-auto-18-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-09T17:48:41.949+02:00  INFO 15408 --- [NivelesInstituto] [-auto-18-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-09T17:48:41.950+02:00  INFO 15408 --- [NivelesInstituto] [-auto-18-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-05-09T17:48:41.973+02:00  INFO 15408 --- [NivelesInstituto] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-09T17:48:41.976+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown initiated...
+2024-05-09T17:48:41.978+02:00  INFO 15408 --- [NivelesInstituto] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-18 - Shutdown completed.
+]]></system-out>
+  </testcase>
+</testsuite>

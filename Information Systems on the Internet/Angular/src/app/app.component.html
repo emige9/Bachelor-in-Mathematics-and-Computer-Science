@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Lista de contactos</h1>
+        <TABLE class = "table table-striped">
+          <THEAD>
+              <TR><TH>Nombre</TH><TH>Apellidos</TH><TH>E-mail</TH><TH>Teléfono</TH></TR>
+          </THEAD> 
+          <TBODY>
+            <TR *ngFor="let contacto of contactos">
+              <TD>{{contacto.nombre}}</TD>
+              <TD>{{contacto.apellidos}}</TD>
+              <TD>{{contacto.email}}</TD>
+              <TD>{{contacto.telefono}}</TD>
+              <TD>
+                <button class="col-auto btn btn-outline-primary" (click)="editarContacto(contacto)"> <i class="bi bi-pencil-fill"></i></button>
+                &nbsp;
+                <button class="col-auto btn btn-outline-danger" (click)="eliminarContacto(contacto)"> <i class="bi bi-trash-fill"></i></button>
+                
+              </TD>
+            </TR>
+          </TBODY>
+      </TABLE>
+      <button type="button" class="btn btn-outline-success bi bi-plus-lg" (click)="aniadirContacto()"></button>
+    </div>
+  </div>
+</div>
+
+
+
+

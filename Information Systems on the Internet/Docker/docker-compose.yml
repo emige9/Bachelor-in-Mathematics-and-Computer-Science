@@ -1,0 +1,38 @@
+version: '3.9'
+services:
+  backend:
+    build: ./app
+    container_name: backend_container
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+    environment: 
+      SPRING_DATASOURCE_URL: "jdbc:mysql://db:3306/listadb"
+      SPRING_DATASOURCE_DRIVERCLASSNAME: com.mysql.cj.jdbc.Driver
+      SPRING_DATASOURCE_USERNAME: listauser
+      SPRING_DATASOURCE_PASSWORD: listapassword
+      SPRING_JPA_GENERATE_DDL: "true"
+      SPRING_H2_CONSOLE_ENABLED: "false"
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.MySQLDialect
+  db:
+    image: mysql:8.4.0
+    container_name: mysql_container
+    environment:
+        MYSQL_DATABASE: listadb
+        MYSQL_USER: listauser
+        MYSQL_PASSWORD: listapassword
+        MYSQL_ROOT_PASSWORD: '1'
+    volumes:
+        - "datos:/var/lib/mysql"
+    restart: always
+    healthcheck:
+      test: "/usr/bin/mysql --user=listauser --password=listapassword --execute \"SHOW DATABASES;\""
+      interval: 5s
+      timeout: 2s
+      retries: 60
+
+
+volumes:
+  datos:

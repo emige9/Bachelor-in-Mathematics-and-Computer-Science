@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 22.24 s -- in es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.errorAlAgregarGrupoANivelInexistente -- Time elapsed: 1.299 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.errorAlModificarNombreDeGrupoDeNivelInexistente -- Time elapsed: 0.061 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.devuelveListaNiveles -- Time elapsed: 0.128 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.eliminarNivel -- Time elapsed: 0.437 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.errorAlModificarNombreDeGrupoInexistenteDeNivelExistente -- Time elapsed: 0.055 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.insertaGrupoEnNivel -- Time elapsed: 0.072 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.modificarNivel -- Time elapsed: 0.148 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.errorAlAgregarGrupoConNombreExistenteEnNivel -- Time elapsed: 0.048 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.insertaNivelExistente -- Time elapsed: 0.043 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.errorAlModificarNombreDeGrupoConNombreExistenteEnNivel -- Time elapsed: 0.104 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.errorAlEliminarNivelConGrupos -- Time elapsed: 0.081 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.errorAlEliminarGrupoDeNivelInexistente -- Time elapsed: 0.045 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.eliminaGrupoDeNivel -- Time elapsed: 0.084 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.errorAlEliminarGrupoInexistenteDeNivelExistente -- Time elapsed: 0.055 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.errorAlEliminarGrupoNoAsociadoANivel -- Time elapsed: 0.080 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.obtenerNivelConcreto -- Time elapsed: 0.064 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.modificaNombreDeGrupo -- Time elapsed: 0.054 s
+es.uma.informatica.sii.nivelesinstituto.NivelesInstitutoApplicationTests$NivelesLlenos.modificarNivelConNombreExistente -- Time elapsed: 0.055 s

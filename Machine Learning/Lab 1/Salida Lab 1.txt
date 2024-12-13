@@ -1,0 +1,84 @@
+          x1        x2 y
+1   2.771245 1.7847839 0
+2   1.728571 1.1697614 0
+3   3.678320 2.8128136 0
+4   3.961043 2.6199503 0
+5   2.999209 2.2090142 0
+6   7.497546 3.1629535 1
+7   9.002203 3.3390472 1
+8   7.444542 0.4766834 1
+9  10.124939 3.2345510 1
+10  6.642287 3.3199838 1
+Variable óptima para la primera division:  x1 
+Valor óptimo para la primera división:  6.642287 
+Varianza total mínima: 0 
+Árbol de decisión recursivo:
+ Nivel 0 
+ Nodo 0 :  x1 < 6.642287 
+ Izquierda
+   Nivel 1 
+   Nodo 1 :  x1 < 2.771245 
+   Izquierda
+      Nivel 2 
+      Nodo 2 :  x1 < 1.728571 
+      Detenido en el nivel 2 
+   Derecha
+      Nivel 2 
+      Nodo 2 :  x1 < 2.771245 
+      Detenido en el nivel 2 
+ Derecha
+   Nivel 1 
+   Nodo 1 :  x1 < 7.497546 
+   Izquierda
+      Nivel 2 
+      Nodo 2 :  x1 < 7.444542 
+      Detenido en el nivel 2 
+   Derecha
+      Nivel 2 
+      Nodo 2 :  x1 < 7.497546 
+      Detenido en el nivel 2 
+Evaluando variable: x1 valor: 2.771245 varianza total: 2.222222 
+Evaluando variable: x1 valor: 1.728571 varianza total: 2.5 
+Evaluando variable: x1 valor: 3.67832 varianza total: 1.428571 
+Evaluando variable: x1 valor: 3.961043 varianza total: 0.8333333 
+Evaluando variable: x1 valor: 2.999209 varianza total: 1.875 
+Evaluando variable: x1 valor: 7.497546 varianza total: 1.428571 
+Evaluando variable: x1 valor: 9.002203 varianza total: 1.875 
+Evaluando variable: x1 valor: 7.444542 varianza total: 0.8333333 
+Evaluando variable: x1 valor: 10.12494 varianza total: 2.222222 
+Evaluando variable: x1 valor: 6.642287 varianza total: 0 
+Evaluando variable: x2 valor: 1.784784 varianza total: 2.5 
+Evaluando variable: x2 valor: 1.169761 varianza total: 2.222222 
+Evaluando variable: x2 valor: 2.812814 varianza total: 1.6 
+Evaluando variable: x2 valor: 2.61995 varianza total: 2.083333 
+Evaluando variable: x2 valor: 2.209014 varianza total: 2.380952 
+Evaluando variable: x2 valor: 3.162954 varianza total: 0.8333333 
+Evaluando variable: x2 valor: 3.339047 varianza total: 2.222222 
+Evaluando variable: x2 valor: 0.4766834 varianza total: 2.5 
+Evaluando variable: x2 valor: 3.234551 varianza total: 1.428571 
+Evaluando variable: x2 valor: 3.319984 varianza total: 1.875 
+Variable óptima para la primera división:  x1 
+Valor óptimo para la primera división:  6.642287 
+Varianza total mínima: 0 
+Arbol 1.
+ Nivel 0
+ Nodo 1(o raiz): x1 < 7.497545867 
+ Nivel 1
+ Derecha
+ Nodo 2: x1 < 7.497545867 
+ etiqueta nodo derecha - etiqueta nodo izquierda
+ Izquierda
+ etiqueta nodo
+Arbol 2.
+ Nivel 0
+ Nodo 1(o raíz): x1 < 2.771244718 
+ Nivel 1
+ Derecha
+ etiqueta nodo
+ Izquierda
+ Nodo 2: x1 < 2.771244718 
+ etiqueta nodo derecha - etiqueta nodo izquierda
+Predicción.
+T1: accuracy del árbol T1 = 0 
+T2: accuracy del árbol T2 = 0 
+Mejor árbol:  T2 

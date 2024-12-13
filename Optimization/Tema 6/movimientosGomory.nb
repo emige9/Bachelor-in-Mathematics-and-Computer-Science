@@ -1,0 +1,553 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     21906,        545]
+NotebookOptionsPosition[     20835,        519]
+NotebookOutlinePosition[     21173,        534]
+CellTagsIndexPosition[     21130,        531]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {GridBox[{
+         {
+          RowBox[{"               ", GridBox[{
+             {"Min", 
+              RowBox[{
+               RowBox[{"3", "x1"}], "+", 
+               RowBox[{"4", "x2"}]}]}
+            }]}]},
+         {
+          RowBox[{"                            ", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"s", ".", "a", ".", "  ", "x1"}], "+", "x2"}], 
+            "\[GreaterEqual]", "4"}]}]}
+        }]},
+      {
+       RowBox[{"                                       ", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"x1", "+", 
+           RowBox[{"2", "x2"}]}], "\[GreaterEqual]", "4"}], 
+         "\[IndentingNewLine]", "\t\t\t                          ", 
+         RowBox[{"x1", ",", 
+          RowBox[{"x2", "\[GreaterEqual]", "0"}]}]}]}]}
+     }]},
+   {
+    RowBox[{"                                         ", 
+     RowBox[{"x1", ",", 
+      RowBox[{"x2", " ", "enteras"}]}]}]}
+  }]], "Text",
+ CellFrame->3,
+ CellFrameColor->RGBColor[1, 0.5, 0],
+ CellChangeTimes->{{3.468766599353421*^9, 3.468766763574479*^9}, {
+  3.468827820866357*^9, 3.468827828884705*^9}, {3.468827867603544*^9, 
+  3.468827962302918*^9}, {3.501228827404501*^9, 3.501228836380639*^9}, {
+  3.625925210896467*^9, 3.6259252752374287`*^9}, {3.7837693789716883`*^9, 
+  3.7837694154661503`*^9}, {3.783771269737404*^9, 3.78377130009632*^9}},
+ FontSize->18,
+ Background->RGBColor[
+  1, 0.9, 0.8],ExpressionUUID->"b5779dfd-1f86-46bf-855c-ad5839fafea3"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`k$$ = 0, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`k$$], 0, 26, 1}}, Typeset`size$$ = {
+    847., {216., 220.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`k$1302195$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`k$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`k$$, $CellContext`k$1302195$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Plot[{($CellContext`k$$ - 3 $CellContext`x)/4, 4 - 3 $CellContext`x, 
+          2 - $CellContext`x/2}, {$CellContext`x, -5, 7.5}, 
+         PlotStyle -> {{Red, Thick, Dashed}, {Blue, Thick}, {Green, Thick}}, 
+         PlotLegends -> {
+          3 $CellContext`x1 + 4 $CellContext`x2 == $CellContext`k$$, 
+           "3x1+x2=4", "x1+2x2=4"}, PlotRange -> {{-2, 7.5}, {-4, 9.5}}, 
+         ImageSize -> 700], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 0}, {$CellContext`t, 4, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 1}, {$CellContext`t, 2, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 2}, {$CellContext`t, 1, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Black, 
+          Point[
+           Table[{4/5, 8/5}]], 
+          Text["Soluci\[OAcute]n \[OAcute]ptima PR", {0.2, 1.3}]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 3}, {$CellContext`t, 1, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 4}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 5}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 6}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 7}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 8}, {$CellContext`t, 0, 7}]]}], 
+        RegionPlot[
+         And[
+         3 $CellContext`x + $CellContext`y >= 
+          4, $CellContext`x + 2 $CellContext`y >= 4, $CellContext`x >= 
+          0, $CellContext`y >= 0], {$CellContext`x, -2, 
+          8}, {$CellContext`y, -4, 10.5}, BoundaryStyle -> None, PlotStyle -> 
+         Directive[LightGray, 
+           Opacity[0.2]], Mesh -> None], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 9}, {$CellContext`t, 0, 7}]]}]], 
+      "Specifications" :> {{$CellContext`k$$, 0, 26, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{892., {261., 267.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.783255482185706*^9, 3.7832555397494497`*^9}, 
+   3.783256041881811*^9, {3.78325608597328*^9, 3.7832561618136044`*^9}, 
+   3.783256194301279*^9, {3.7832562443066463`*^9, 3.783256265616794*^9}, 
+   3.783674225475234*^9, {3.783674384327508*^9, 3.783674392202517*^9}, {
+   3.7837019493329268`*^9, 3.783701958812724*^9}, {3.783770546231134*^9, 
+   3.78377056644483*^9}, {3.783770749298506*^9, 3.78377077152089*^9}, {
+   3.815824559369678*^9, 3.8158245704948*^9}},
+ CellLabel->
+  "Out[494]=",ExpressionUUID->"e87c86e6-9fcc-4519-8020-1d10ca86c316"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Corte de Gomory a partir de la segunda componente de la soluci\[OAcute]n \
+\[OAcute]ptima del problema relajado\
+\>", "Section",
+ CellChangeTimes->{{3.783701885776408*^9, 3.7837019390564003`*^9}, 
+   3.783702409667437*^9, 
+   3.783702504594202*^9},ExpressionUUID->"dc9645ff-14e6-4067-850e-\
+9f5344485a91"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`k$$ = 0, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`k$$], 0, 26, 1}}, Typeset`size$$ = {
+    847., {216., 220.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`k$1302547$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`k$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`k$$, $CellContext`k$1302547$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Plot[{($CellContext`k$$ - 3 $CellContext`x)/4, 4 - 3 $CellContext`x, 
+          2 - $CellContext`x/2, 3 - $CellContext`x}, {$CellContext`x, -5, 
+          7.5}, PlotStyle -> {{Red, Thick, Dashed}, {Blue, Thick}, {
+           Green, Thick}, {Black, Thick}}, 
+         PlotLegends -> {
+          3 $CellContext`x1 + 4 $CellContext`x2 == $CellContext`k$$, 
+           "3x1+x2=4", "x1+2x2=4", "Corte"}, 
+         PlotRange -> {{-2, 7.5}, {-4, 9.5}}, ImageSize -> 700], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 0}, {$CellContext`t, 4, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 1}, {$CellContext`t, 3, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 2}, {$CellContext`t, 1, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Blue, 
+          Point[
+           Table[{4/5, 8/5}]], 
+          Text["Soluci\[OAcute]n \[OAcute]ptima PR", {0.2, 1.3}]}], 
+        Graphics[{
+          PointSize[Large], Black, 
+          Point[
+           Table[{2, 1}]], 
+          Text["Soluci\[OAcute]n \[OAcute]ptima PE", {1.4, 0.7}]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 3}, {$CellContext`t, 1, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 4}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 5}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 6}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 7}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 8}, {$CellContext`t, 0, 7}]]}], 
+        RegionPlot[
+         And[
+         3 $CellContext`x + $CellContext`y >= 
+          4, $CellContext`x + 2 $CellContext`y >= 4, $CellContext`x >= 
+          0, $CellContext`y >= 0, $CellContext`x + $CellContext`y >= 
+          3], {$CellContext`x, -2, 8}, {$CellContext`y, -4, 10.5}, 
+         BoundaryStyle -> None, PlotStyle -> Directive[LightGray, 
+           Opacity[0.3]], Mesh -> None], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 9}, {$CellContext`t, 0, 7}]]}]], 
+      "Specifications" :> {{$CellContext`k$$, 0, 26, 1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{892., {261., 267.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.7837024547889357`*^9, {3.783770830429904*^9, 3.783770891872718*^9}, 
+   3.783770946381715*^9, 3.8158246275103617`*^9},
+ CellLabel->
+  "Out[495]=",ExpressionUUID->"b4be0983-a535-48c1-8de9-0d6653660360"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Corte 1 de Gomory a partir de la primera componente de la soluci\[OAcute]n \
+\[OAcute]ptima del problema relajado\
+\>", "Section",
+ CellChangeTimes->{{3.783701885776408*^9, 3.7837019390564003`*^9}, 
+   3.783702409667437*^9, {3.7837025117142277`*^9, 
+   3.783702517937664*^9}},ExpressionUUID->"3b24c943-4927-4d57-97d8-\
+f1c4ba778ab3"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`k$$ = 0, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`k$$], 0, 26, 0.1}}, Typeset`size$$ = {
+    847., {216., 220.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`k$1314674$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`k$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`k$$, $CellContext`k$1314674$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Plot[{($CellContext`k$$ - 3 $CellContext`x)/4, 4 - 3 $CellContext`x, 
+          2 - $CellContext`x/2, 4 - 2 $CellContext`x}, {$CellContext`x, -5, 
+          7.5}, PlotStyle -> {{Red, Thick, Dashed}, {Blue, Thick}, {
+           Green, Thick}, {Black, Thick}}, 
+         PlotLegends -> {
+          3 $CellContext`x1 + 4 $CellContext`x2 == $CellContext`k$$, 
+           "3x1+x2=4", "x1+2x2=4", "Corte 1"}, 
+         PlotRange -> {{-2, 7.5}, {-4, 9.5}}, ImageSize -> 700], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 0}, {$CellContext`t, 4, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 1}, {$CellContext`t, 3, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 2}, {$CellContext`t, 1, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Blue, 
+          Point[
+           Table[{4/5, 8/5}]], 
+          Text["Soluci\[OAcute]n \[OAcute]ptima PR", {0.2, 1.3}]}], 
+        Graphics[{
+          PointSize[Large], Black, 
+          Point[
+           Table[{4/3, 4/3}]], 
+          Text["Soluci\[OAcute]n \[OAcute]ptima C1", {2.05, 1.3}]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 3}, {$CellContext`t, 1, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 4}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 5}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 6}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 7}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 8}, {$CellContext`t, 0, 7}]]}], 
+        RegionPlot[
+         And[
+         3 $CellContext`x + $CellContext`y >= 
+          4, $CellContext`x + 2 $CellContext`y >= 4, $CellContext`x >= 
+          0, $CellContext`y >= 0, 2 $CellContext`x + $CellContext`y >= 
+          4], {$CellContext`x, -2, 8}, {$CellContext`y, -4, 10.5}, 
+         BoundaryStyle -> None, PlotStyle -> Directive[LightGray, 
+           Opacity[0.3]], Mesh -> None], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 9}, {$CellContext`t, 0, 7}]]}]], 
+      "Specifications" :> {{$CellContext`k$$, 0, 26, 0.1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{892., {261., 267.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.783702521714422*^9, 3.783770930942772*^9, {3.783770980423222*^9, 
+   3.783771088894788*^9}, 3.8158252390147467`*^9},
+ CellLabel->
+  "Out[496]=",ExpressionUUID->"3656129e-6c0f-404c-863c-04950b793a50"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Corte 2 ", "Section",
+ CellChangeTimes->{{3.783701885776408*^9, 3.7837019390564003`*^9}, 
+   3.783702409667437*^9, {3.7837025117142277`*^9, 3.783702517937664*^9}, {
+   3.783703036855304*^9, 
+   3.783703040926527*^9}},ExpressionUUID->"29ac0dd5-0443-4a41-ae5e-\
+72ef255514fe"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`k$$ = 0., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"sin t\[IAcute]tulo\"", Typeset`specs$$ = {{
+      Hold[$CellContext`k$$], 0, 26, 0.1}}, Typeset`size$$ = {
+    851., {216., 220.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`k$1315614$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`k$$ = 0}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`k$$, $CellContext`k$1315614$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Show[
+        Plot[{($CellContext`k$$ - 3 $CellContext`x)/4, 4 - 3 $CellContext`x, 
+          2 - $CellContext`x/2, 4 - 2 $CellContext`x, 
+          3 - $CellContext`x}, {$CellContext`x, -5, 7.5}, 
+         PlotStyle -> {{Red, Thick, Dashed}, {Blue, Thick}, {Green, Thick}, {
+           Brown, Thick}, {Black, Thick}}, 
+         PlotLegends -> {
+          3 $CellContext`x1 + 4 $CellContext`x2 == $CellContext`k$$, 
+           "3x1+x2=4", "x1+2x2=4", "Corte 1", "Corte 2"}, 
+         PlotRange -> {{-2, 7.5}, {-4, 9.5}}, ImageSize -> 700], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 0}, {$CellContext`t, 4, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 1}, {$CellContext`t, 3, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 2}, {$CellContext`t, 1, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 3}, {$CellContext`t, 1, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 4}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 5}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 6}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 7}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 8}, {$CellContext`t, 0, 7}]]}], 
+        Graphics[{
+          PointSize[Large], Black, 
+          Point[
+           Table[{2, 1}]], 
+          Text["Soluci\[OAcute]n \[OAcute]ptima PE", {2.5, 1.3}]}], 
+        Graphics[{
+          PointSize[Large], Blue, 
+          Point[
+           Table[{4/5, 8/5}]], 
+          Text["Soluci\[OAcute]n \[OAcute]ptima PR", {0.2, 1.3}]}], 
+        Graphics[{
+          PointSize[Large], Brown, 
+          Point[
+           Table[{4/3, 4/3}]], 
+          Text["Soluci\[OAcute]n \[OAcute]ptima C1", {1.2, 0.9}]}], 
+        RegionPlot[
+         And[
+         3 $CellContext`x + $CellContext`y >= 
+          4, $CellContext`x + 2 $CellContext`y >= 4, $CellContext`x >= 
+          0, $CellContext`y >= 0, 2 $CellContext`x + $CellContext`y >= 
+          4, $CellContext`x + $CellContext`y >= 3], {$CellContext`x, -2, 
+          8}, {$CellContext`y, -4, 10.5}, BoundaryStyle -> None, PlotStyle -> 
+         Directive[LightGray, 
+           Opacity[0.3]], Mesh -> None], 
+        Graphics[{
+          PointSize[Large], Red, 
+          Point[
+           Table[{$CellContext`t, 9}, {$CellContext`t, 0, 7}]]}]], 
+      "Specifications" :> {{$CellContext`k$$, 0, 26, 0.1}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{896., {261., 267.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.783702544277336*^9, 3.783702618486228*^9, 3.783702713494925*^9, 
+   3.783702777562278*^9, {3.783771120155014*^9, 3.783771226773861*^9}, 
+   3.815825271201069*^9},
+ CellLabel->
+  "Out[497]=",ExpressionUUID->"c7f47471-5aa6-4ace-8274-b04722269371"]
+}, Open  ]]
+},
+WindowSize->{1102, 811},
+WindowMargins->{{37, Automatic}, {Automatic, 1}},
+FrontEndVersion->"12.0 para Mac OS X x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1503, 41, 167, "Text",ExpressionUUID->"b5779dfd-1f86-46bf-855c-ad5839fafea3"],
+Cell[2064, 63, 4396, 100, 547, "Output",ExpressionUUID->"e87c86e6-9fcc-4519-8020-1d10ca86c316"],
+Cell[CellGroupData[{
+Cell[6485, 167, 315, 7, 105, "Section",ExpressionUUID->"dc9645ff-14e6-4067-850e-9f5344485a91"],
+Cell[6803, 176, 4322, 102, 547, "Output",ExpressionUUID->"b4be0983-a535-48c1-8de9-0d6653660360"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11162, 283, 343, 7, 105, "Section",ExpressionUUID->"3b24c943-4927-4d57-97d8-f1c4ba778ab3"],
+Cell[11508, 292, 4335, 102, 547, "Output",ExpressionUUID->"3656129e-6c0f-404c-863c-04950b793a50"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15880, 399, 280, 5, 67, "Section",ExpressionUUID->"29ac0dd5-0443-4a41-ae5e-72ef255514fe"],
+Cell[16163, 406, 4656, 110, 547, "Output",ExpressionUUID->"c7f47471-5aa6-4ace-8274-b04722269371"]
+}, Open  ]]
+}
+]
+*)
+
